@@ -1,0 +1,117 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: #009473;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  // Svg Div
+  .svgHome {
+    width: 100%;
+    height: 50%;
+    background: url("././../assets/homewave.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > h1 {
+      font-size: 2em;
+      color: #ffffff;
+      > span {
+        color: #09e2b0;
+      }
+    }
+    > p {
+      font-size: 4em;
+      color: #ffffff;
+      text-transform: capitalize;
+    }
+    > span {
+      display: inline-block;
+      font-size: 4em;
+      color: #08c09b;
+    }
+  }
+  // E-Learning Div
+  .ELearningDiv {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    .div1 {
+      flex: 1;
+      > p {
+        font-size: 3em;
+        font-weight: 800;
+      }
+      .p1 {
+        color: #ffffff;
+        font-weight: 100;
+      }
+      .p2 {
+        color: #1e2d40;
+      }
+      .p3 {
+        color: #ffffff;
+      }
+    }
+    .div2 {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      position: relative;
+      .card {
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > a {
+          text-decoration: none;
+          color: #1e2d40;
+          font-size: 1em;
+          font-weight: 600;
+          padding: 10px;
+          transition: all 0.5s ease-in-out;
+          &:hover {
+            color: #09e2b0;
+            background: #1e2d40;
+            transform: scale(2);
+          }
+        }
+      }
+    }
+  }
+  // Discord Div
+  .discordDiv {
+    width: 50%;
+    height: 50px;
+    background-color: #1e2d40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    > p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      color: #ffffff;
+      > .icon {
+        color: #08c09b;
+        font-size: 2em;
+      }
+    }
+    &:hover {
+      transform: scaleY(1.2);
+    }
+  }
+}
